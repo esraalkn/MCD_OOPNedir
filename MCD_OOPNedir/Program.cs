@@ -25,27 +25,54 @@ namespace MCD_OOPNedir
             #endregion
 
             #region Musteri Sınıfı İnceleme
-            Musteri M1 = new Musteri("122544013254", "Murat");
-            M1.TcKimlikNo = "1225440152";
-            M1.Isim = "Cengiz";
-            M1.SoyIsim = "Atilla";
-            M1.Cinsiyet = 717770001;
+            //Musteri M1 = new Musteri("122544013254", "Murat");
+            //M1.TcKimlikNo = "1225440152";
+            //M1.Isim = "Cengiz";
+            //M1.SoyIsim = "Atilla";
+            //M1.Cinsiyet = 717770001;
 
-            Musteri M2 = M1;
-            M2.Isim = "Murat";
-            M2.TcKimlikNo = "12254401325";
+            //Musteri M2 = M1;
+            //M2.Isim = "Murat";
+            //M2.TcKimlikNo = "12254401325";
 
-            bool musteriKontrol = M2.MusteriKontrol();
+            //bool musteriKontrol = M2.MusteriKontrol();
 
-            Console.WriteLine(musteriKontrol);
+            //Console.WriteLine(musteriKontrol);
 
-            M2 = null;
-            M1 = null;
+            //M2 = null;
+            //M1 = null;
 
-            string isim = M2.Isim;
+           // string isim = M2.Isim;
 
             //Customer M3 = new Customer ();
 
+            //Classlardan nesne bu şekilde new kelimesi ile türetilir.
+
+            //So, a class is a template for object, and an object is an instance of a class.
+
+            Fruit meyve1 = new Fruit();
+            meyve1.FruitName = "Bu bir elmadır.";
+            meyve1.MeyveRengi = "kırmızı";
+            meyve1.OlusturulmaTarihi = DateTime.Now;
+
+            Console.WriteLine(meyve1.FruitName);
+            Console.WriteLine(meyve1.MeyveRengi);
+
+            Fruit meyve2 = new Fruit();
+            meyve1.FruitName = "Bu bir çilek.";
+            meyve1.MeyveRengi = "pembe";
+            meyve1.OlusturulmaTarihi = DateTime.Now;
+
+            Console.WriteLine(meyve2.FruitName);
+            Console.WriteLine(meyve2.MeyveRengi);
+
+            Fruit meyve3 = new Fruit();
+            meyve1.FruitName = "Bu bir portakal.";
+            meyve1.MeyveRengi = "turuncu";
+            meyve1.OlusturulmaTarihi = DateTime.Now;
+
+            Console.WriteLine(meyve3.FruitName);
+            Console.WriteLine(meyve3.MeyveRengi);
             #endregion
 
             Console.ReadLine();
